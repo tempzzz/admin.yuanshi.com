@@ -1,0 +1,89 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">交易管理</h1>
+        <p class="description">添加App支付渠道</p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+
+
+
+    <div class="panel-body">
+
+        <form role="form" id="form1" method="post" class="validate" action="/App/payment_edit" autocomplete="off" onsubmit="return checkData(this);">
+            <input type="hidden" name="id" value="{$data.id}" />
+            <input type="hidden" name="appid" id="appid" value="{$data.appid}" />
+            <div class="row col-margin">
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" name="appkey" id="appkey" placeholder="Appkey" value="{$data.appkey}" readonly />
+                </div>
+
+                <div class="col-xs-12">
+                <!--<label class="control-label"><strong>App名称</strong></label>-->
+                    <input type="text" class="form-control" name="appname" id="appname" placeholder="App名称" value="{$data.appname}" />
+                </div>
+
+                <php>
+                    $type = json_decode($data['type'],true);
+                </php>
+                <assign name="payment_type" value="$Think.config.PAYMENT_TYPE" />
+
+                <foreach name="payment_type" item="rows" >
+
+                <div class="col-xs-2 form-block">
+                    <label>
+                        <input type="checkbox" name="payments[]" class="cbr cbr-{$rows.color}" value="{$key}"  <php>if($type[$key]) echo 'checked';</php>/>
+                        {$rows.name}
+                    </label>
+                    <br />
+                </div>
+
+                </foreach>
+
+                <div class="col-xs-12">
+                <button type="submit" class="btn btn-success">提交</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<script>
+
+    function checkData(obj){
+        var err = '';
+        var appkey = $('#appkey').val();
+
+        if(!$.trim(appkey)){
+            err +='appkey不能为空<br />';
+        }
+
+        var appname = $('#appname').val();
+
+        if(!$.trim(appname)){
+            err +='appname不能为空<br />';
+        }
+
+
+        if(err){
+            MSGBOX.show(err,'',MSGBOX.MSGTYPE_ALERT);
+            return false;
+        }
+
+        return true;
+
+    }
+
+
+</script>
+
+<!-- Imported scripts on this page -->
+
+<include file="../Apps/Admin/View/_footer.html" />
+

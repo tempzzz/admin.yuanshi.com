@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xenon Boostrap Admin Panel" />
+    <meta name="author" content="" />
+
+    <title>Muzhiwan.com</title>
+
+
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    </head>
+<body>
+<div id="text"></div>
+<style>
+    #text{width:100%;height:100px;line-height:40px;font-weight: bold;margin-top:200px;text-align: center;font-size:80px;}
+</style>
+<script>
+    _record = 0;
+    function titleBlink(){
+        _record++;
+        if(_record==3){//当变量_record累加到3是，将其赋值为1。相当于无限循环。
+            _record=1;
+        }
+        if(_record==1){
+            document.title='【      】';
+        }
+        if(_record==2){
+            document.title='【新消息。。。。。。。。。。。。】';
+        }
+        setTimeout("titleBlink()",2000);//调节时间，单位毫秒。
+    }
+
+function checkCode(){
+    $.ajax({
+        url: "/t.php",
+        method: 'get',
+        success: function(resp)
+        {
+            if(resp != 1){
+                $('#text').css('color','red').html('Warning!~~Warning!!!!');
+                titleBlink();
+            }else
+                $('#text').css('color','black').html('none');
+
+        }
+    });
+}
+
+ setInterval('checkCode()',10000);
+</script>
+</body>
+</html>

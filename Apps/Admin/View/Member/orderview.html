@@ -1,0 +1,130 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">订单管理</h1>
+        <p class="description">详情</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <!-- Bordered + Striped Table -->
+                        <strong>订单详情</strong>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                                <tr>
+                                    <td>
+
+                                            {$field[$key]}
+
+                                    </td>
+                                    <td>{$row}</td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+                        <strong>厂商回调信息</strong>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="cp" item="rows">
+                                <tr>
+                                    <td>
+
+                                        {$key}
+
+                                    </td>
+                                    <td>{$rows}</td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+
+                        <strong>易宝回调信息</strong>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="callback" item="rows">
+                                <tr>
+                                    <td>
+
+                                        {$key}
+
+                                    </td>
+                                    <td>{$rows}</td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+                        <strong>手机硬件信息</strong>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="mobile" item="rows">
+                                <tr>
+                                    <td>
+
+                                        {$key}
+
+                                    </td>
+                                    <td>{$rows}</td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<include file="../Apps/Admin/View/_footer.html" />

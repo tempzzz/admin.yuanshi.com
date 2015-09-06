@@ -1,0 +1,72 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">用户管理</h1>
+        <p class="description">列表</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <!-- Bordered + Striped Table -->
+                        <a class="btn btn-blue" href="/User/add_form">添加用户</a>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>用户名</th>
+                                <th>管理组</th>
+                                <th>最后登陆IP</th>
+                                <th>最后登录时间</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                            <tr>
+                                <td>{$row.id}</td>
+                                <td>{$row.username}</td>
+                                <td><php>echo $groups[$row['group_id']];</php></td>
+                                <td>{$row.last_ip}</td>
+                                <td>{$row.last_time|date="Y/m/d H:i",###}</td>
+                                <td>
+
+                                    <a class="btn btn-sm btn-success" title="编辑" href="/User/edit_form/id/{$row.id}">
+                                        <i class="fa-edit"></i>
+                                    </a>
+
+                                    <button class="btn btn-sm btn-red" title="删除" onclick="MSGBOX.show('是否真的要删除？',function(){
+                                location.href='/User/del/id/{$row.id}'});">
+                                        <i class="fa-remove"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<include file="../Apps/Admin/View/_footer.html" />

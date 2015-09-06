@@ -1,0 +1,71 @@
+
+</div><!--main-content"-->
+
+</div><!--page-container-->
+
+<!-- Bottom Scripts -->
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/TweenMax.min.js"></script>
+<script src="/assets/js/resizeable.js"></script>
+<script src="/assets/js/joinable.js"></script>
+<script src="/assets/js/xenon-api.js"></script>
+<script src="/assets/js/xenon-toggles.js"></script>
+
+
+<!-- JavaScripts initializations and stuff -->
+<script src="/assets/js/xenon-custom.js"></script>
+<!--<div class="page-loading-overlay">
+    <div class="loader-2"></div>
+</div>-->
+
+<php>if($_SESSION['notice']):</php>
+    <script>
+        $(document).ready(function(){
+            var opts = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-bottom-right",
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            toastr.<php>echo $_SESSION['notice']['code']</php>("<php>echo $_SESSION['notice']['text']</php>",'提示', opts);
+        } )
+
+    </script>
+    <script src="/assets/js/toastr/toastr.min.js"></script>
+    <php>unset($_SESSION['notice']);endif;</php>
+
+
+<!-- Modal 1 (Basic)-->
+<div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Message</h4>
+            </div>
+
+            <div class="modal-body">
+                Hello I am a Modal!
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white btn-cancle" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-info btn-submit" id="btn-callback">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/custom.js"></script>
+<script src="/js/global.js"></script>
+</body>
+</html>

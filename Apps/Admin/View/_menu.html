@@ -1,0 +1,62 @@
+
+<div class="page-container">
+<!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+<div class="sidebar-menu toggle-others fixed">
+
+<div class="sidebar-menu-inner">
+
+
+
+<ul id="main-menu" class="main-menu">
+    <li>
+        <a href="#" data-toggle="sidebar">
+            <i class="linecons-eye"></i>
+            <span class="title">收起侧边栏</span>
+        </a>
+    </li>
+<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+<php>if(is_array($menu)&&!empty($menu)): $mArr = array(); </php>
+    <php>foreach($menu as $k => $v):$count=0;</php>
+    <li id="{$k}" <php>echo strtolower(CONTROLLER_NAME) == strtolower($k) ? 'class="active expanded opened"':'';</php>>
+    <a href="javascript:void(0);">
+        <php>$icons = C('icon');</php>
+
+        <i class="<php>echo $icons[strtolower($k)];</php>"></i>
+        <span class="title" ><php>echo $menu[$k]['name'];</php></span>
+    </a>
+    <ul>
+        <php>foreach($v['nodes'] as $m => $row):</php>
+                <php>if($row['ismenu'] && $m):$count++;</php>
+                <li >
+                    <a href="/<php>echo $k.($m=='index'?'':'/'.$m);</php>" <php>echo strtolower(CONTROLLER_NAME) == strtolower($k) && strtolower(ACTION_NAME) == strtolower($m) ? 'class="chooseChild"':'';</php>>
+                        <span class="title"><php>echo $row['method_name'];</php></span>
+                    </a>
+                </li>
+                <php>endif;</php>
+        <php>endforeach;</php>
+    </ul>
+    </li>
+    <php>if($count == 0) $mArr[] = $k;</php>
+    <php>endforeach;</php>
+    <php>
+        $str = implode(',',$mArr);
+        echo "<script>var str ='$str';</script>";
+    </php>
+    <script>
+        var arr = str.split(',');
+        for(var i=0;i<arr.length;i++)
+            document.getElementById(arr[i]).style.display = 'none';
+    </script>
+
+
+<php>endif;</php>
+</ul>
+
+</div>
+
+</div>
+<div class="main-content">

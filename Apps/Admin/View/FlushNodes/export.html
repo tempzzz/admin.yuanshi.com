@@ -1,0 +1,84 @@
+<include file="../Apps/Admin/View/_header.html" />
+
+
+    <ol class="breadcrumb bc-1">
+        <li>
+            <a href="/"><i class="fa-home"></i>首页</a>
+        </li>
+        <li>
+
+            <a href="#">节点管理</a>
+        </li>
+        <li class="active">
+
+            <strong>浏览列表</strong>
+        </li>
+    </ol>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Menu</th>
+                                <th>Controller</th>
+                                <th>Method</th>
+                                <th>Desc</th>
+
+                            </tr>
+                            </thead>
+                            <foreach name="data" item="rows" key="controller">
+                            <tbody>
+
+                            <tr>
+                                <td>
+                                    <button class="btn btn-success btn-icon">
+                                    <i class="fa-check"></i>
+                                    <span>全选</span>
+                                </button>
+                                </td>
+                                <td style="text-align: center">{$controller}</td>
+                                <td>&nbsp;</th>
+                                <td ><strong>{$rows.Desc}</strong></td>
+
+
+                            </tr>
+                            </tbody>
+                                   <foreach name="rows.Method" item="row" key="k">
+                                        <tbody>
+
+                                        <tr>
+                                            <td style="background-color: white;"><input type="checkbox" name="ChildMenu[]" class="ChildMenu" value="{$controller}_{$row.Name}" /></td>
+                                            <td  style="background-color: white;text-align: center;">|___</td>
+                                            <td  style="background-color: white;">{$row.Name}</th>
+                                            <td  style="background-color: white;">{$row.Desc}</td>
+                                        </tr>
+                                        </tbody>
+                                        </foreach>
+
+                            </foreach>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<include file="../Apps/Admin/View/_footer.html" />

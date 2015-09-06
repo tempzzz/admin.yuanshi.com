@@ -1,0 +1,62 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {	
+}
+
+a {
+}
+.sidebar-menu .main-menu a {
+
+    color: #cdcdcd;
+
+}
+.sidebar-menu .main-menu a.chooseChild{
+    color:#ffff99;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.sidebar-menu .main-menu li.has-sub > a::before {
+    color:#cdcdcd;
+}
+
+.panel .panel-body td{
+    color:black;
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    font-size:14px;
+}
+
+.title_2{width:10%;}
+.seachInput{width:10%;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    font-size: 13px;
+    height: 32px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+}
+
+.pay_icon{
+    background: url('/images/payments/pay_icon.png') no-repeat;
+    width: 32px;
+    height:32px;
+    float:left;
+    margin-right: 8px;
+}
+
+.pay_icon_yeepay_credit{background-position:0px 0px;}
+.pay_icon_alipay{background-position:-33px 0px;}
+.pay_icon_yeepay_card_game{background-position:-66px 0px;}
+.pay_icon_yeepay_debit{background-position:-99px 0px;}
+.pay_icon_yeepay_card_mobile{background-position:-132px 0px;}
+.pay_icon_tenpay{background-position:-165px 0px;}

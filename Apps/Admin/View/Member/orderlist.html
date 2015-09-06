@@ -1,0 +1,82 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">订单管理</h1>
+        <p class="description">列表</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <form method="get" action="/Member/orderlist" autocomplete="false">
+                        订单号： <input type="text" class="seachInput" name="order_no"  value="{$Think.get.order_no}" />&nbsp;&nbsp;
+                            UID： <input type="text" class="seachInput" name="uid"  value="{$Think.get.uid}" />&nbsp;&nbsp;
+
+                            <assign name="trade_status" value="$Think.get.trade_status" />
+                            交易状态： <select name="trade_status" class="seachInput">
+                            <option value="999">全部</option>
+                            <option value="1" {$trade_status==1?'selected="selected"':''}>已完成</option>
+                            <option value="-1" {$trade_status==-1?'selected="selected"':''}>未完成</option>
+                        </select>&nbsp;&nbsp;
+                            <button class="btn btn-success " type="submit">Search</button></form><br /><br />
+                        <!-- Bordered + Striped Table -->
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>用户(UID)</th>
+                                <th>商品名称</th>
+                                <th class='title_2'>充值</th>
+                                <th class='title_2'>消费</th>
+                                <th>方式</th>
+                                <th class='title_2'>状态</th>
+                                <th>时间</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                                <tr>
+                                    <td>{$row.id}</td>
+                                    <td>{$row.username}<br />({$row.uid})</td>
+                                    <td>{$row.subject}</td>
+                                    <td>{$row.total_fee}</td>
+                                    <td>{$row.game_total_fee}</td>
+                                    <td><php>echo $paytype[$row['payment_type']]</php></td>
+                                    <td>{$row.trade_status}</td>
+
+                                    <td>{$row.time|date="Y/m/d H:i",###}</td>
+                                    <td><a class="btn btn-blue btn-icon btn-icon-standalone btn-icon-standalone-right btn-xs" href="/Member/orderview/id/{$row.id}">
+                                        <i class="fa-search"></i>
+                                        <span>详情</span>
+                                    </a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                        {$page}
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<include file="../Apps/Admin/View/_footer.html" />

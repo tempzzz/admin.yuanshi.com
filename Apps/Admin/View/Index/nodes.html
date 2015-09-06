@@ -1,0 +1,77 @@
+<include file="../Apps/Admin/View/_header.html" />
+
+
+<ol class="breadcrumb bc-1">
+    <li>
+        <a href="/"><i class="fa-home"></i>首页</a>
+    </li>
+    <li>
+
+        <a href="#">节点管理</a>
+    </li>
+    <li class="active">
+
+        <strong>浏览列表</strong>
+    </li>
+</ol>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <a class="btn btn-blue" href="/FlushNodes/rebuild">Rebuilding Nodes</a>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>控制器</th>
+                                <th>方法</th>
+                                <th>描述</th>
+                                <th>显示在菜单栏</th>
+                            </tr>
+                            </thead>
+                            <foreach name="data" item="rows" key="controller">
+                                <tbody>
+
+                                <tr>
+
+                                    <td style="text-align: center">{$controller}</td>
+                                    <td>&nbsp;</th>
+                                    <td ><strong>{$rows.Desc}</strong></td>
+                                    <td >&nbsp;</td>
+
+                                </tr>
+                                </tbody>
+                                <foreach name="rows.Method" item="row" key="k">
+                                    <tbody>
+                                        <td  style="background-color: white;text-align: center;">|___</td>
+                                        <td  style="background-color: white;">{$row.Name}</th>
+                                        <td  style="background-color: white;">{$row.Desc}</td>
+                                        <td  style="background-color: white;"><eq name="row.ismenu" value="1">是<else/>否</eq></td>
+                                    </tr>
+                                    </tbody>
+                                </foreach>
+
+                            </foreach>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<include file="../Apps/Admin/View/_footer.html" />

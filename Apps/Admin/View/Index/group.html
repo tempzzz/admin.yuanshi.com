@@ -1,0 +1,69 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">用户组管理</h1>
+        <p class="description">用户组列表</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <!-- Bordered + Striped Table -->
+                        <a class="btn btn-blue" href="/Group/add_form">添加用户组</a>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>组名</th>
+                                <th>描述</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                                <tr>
+                                    <td>{$row.id}</td>
+                                    <td>{$row.name}</td>
+                                    <td>{$row.desc}</td>
+                                    <td>
+
+                                        <a class="btn btn-sm btn-success" title="编辑" href="/Group/edit_form/id/{$row.id}">
+                                            <i class="fa-edit"></i>
+                                        </a>
+
+                                        <button class="btn btn-sm btn-red" title="删除" onclick="MSGBOX.show('是否真的要删除？',function(){
+                                location.href='/Group/del/id/{$row.id}'
+                            });">
+                                            <i class="fa-remove"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<include file="../Apps/Admin/View/_footer.html" />

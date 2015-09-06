@@ -1,0 +1,1437 @@
+[ 2015-07-31T16:43:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+
+[ 2015-07-31T16:43:32+08:00 ] 127.0.0.1 /Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\LoginController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: from D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\bcab1efc6286bfc731edcd426e06f04a.php 第 219 行.
+NOTIC: [8] Undefined variable: error_msg D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\bcab1efc6286bfc731edcd426e06f04a.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2015-07-31T16:43:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+
+[ 2015-07-31T16:43:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+
+[ 2015-07-31T16:43:37+08:00 ] 127.0.0.1 /Login/auth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'admin' AND `password` = 'cf287cb3c51486f44b30169785f16d37' LIMIT 1   [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0372s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0558s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0218s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438332216','/Login/auth','login','auth') [ RunTime:0.3044s ]
+
+[ 2015-07-31T16:43:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0555s ]
+NOTIC: [8] Undefined variable: ret D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AuthController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000548s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2015-07-31T16:43:42+08:00 ] 127.0.0.1 /FlushNodes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0441s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0414s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0534s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0565s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\c123ed7e50b5d72ba38762de26735f44.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002175s ]
+
+[ 2015-07-31T16:44:04+08:00 ] 127.0.0.1 /FlushNodes/rebuild
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0230s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438332231','/FlushNodes/rebuild','flushnodes','rebuild') [ RunTime:0.1068s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0581s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0805s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1164s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1027s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1021s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1104s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1150s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1249s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1091s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0563s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0318s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0309s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0521s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0732s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0492s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0399s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0561s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0898s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0743s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0702s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0900s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0955s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1057s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1124s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1206s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.3173s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0484s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0382s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0603s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0433s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0631s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0671s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0845s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0975s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1075s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1070s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1027s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0676s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0778s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1014s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1230s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1201s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1046s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0534s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0432s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0251s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0525s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0578s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0558s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1065s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0836s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0995s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1056s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1083s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1125s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1220s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1464s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0817s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0342s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0251s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0383s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0664s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0755s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0813s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0883s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0901s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0999s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1116s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0918s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1129s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1087s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.3103s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0214s ]
+SQL: INSERT INTO `admin_nodes` (`controller`,`controller_name`,`rootid`,`ismenu`) VALUES ('App','后台','0','1') [ RunTime:0.0773s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0197s ]
+SQL: INSERT INTO `admin_nodes` (`controller`,`method`,`method_name`,`ismenu`,`rootid`) VALUES ('App','index','App列表','1','34') [ RunTime:0.0828s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0371s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`controller_name`='更新节点',`rootid`='0',`ismenu`='1' WHERE ( id=1 ) [ RunTime:0.1122s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0636s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='index',`method_name`='浏览节点',`ismenu`='1',`rootid`='1' WHERE ( id=2 ) [ RunTime:0.1184s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0800s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='rebuild',`method_name`='初始化节点数据',`ismenu`='0',`rootid`='1' WHERE ( id=3 ) [ RunTime:0.1066s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0613s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`controller_name`='用户组管理',`rootid`='0',`ismenu`='1' WHERE ( id=4 ) [ RunTime:0.1240s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'index' LIMIT 1   [ RunTime:0.0891s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='index',`method_name`='用户组列表',`ismenu`='1',`rootid`='4' WHERE ( id=5 ) [ RunTime:0.1310s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0769s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add_form',`method_name`='添加用户组（模板）',`ismenu`='0',`rootid`='4' WHERE ( id=6 ) [ RunTime:0.0880s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add' LIMIT 1   [ RunTime:0.0710s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add',`method_name`='添加用户组（提交）',`ismenu`='0',`rootid`='4' WHERE ( id=7 ) [ RunTime:0.0954s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0727s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit_form',`method_name`='编辑用户组(模板)',`ismenu`='0',`rootid`='4' WHERE ( id=8 ) [ RunTime:0.1122s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0458s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit',`method_name`='编辑用户组(提交)',`ismenu`='0',`rootid`='4' WHERE ( id=9 ) [ RunTime:0.1154s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'del' LIMIT 1   [ RunTime:0.0704s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='del',`method_name`='删除用户组',`ismenu`='0',`rootid`='4' WHERE ( id=10 ) [ RunTime:0.1363s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0920s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`controller_name`='后台',`rootid`='0',`ismenu`='1' WHERE ( id=11 ) [ RunTime:0.1524s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `method` = 'index' LIMIT 1   [ RunTime:0.1266s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`method`='index',`method_name`='首页',`ismenu`='1',`rootid`='11' WHERE ( id=12 ) [ RunTime:0.1499s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `rootid` = 0 LIMIT 1   [ RunTime:0.1114s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`controller_name`='日志记录',`rootid`='0',`ismenu`='1' WHERE ( id=13 ) [ RunTime:0.1161s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `method` = 'index' LIMIT 1   [ RunTime:0.0266s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`method`='index',`method_name`='浏览所有日志',`ismenu`='1',`rootid`='13' WHERE ( id=14 ) [ RunTime:0.0672s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0214s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`controller_name`='交易管理',`rootid`='0',`ismenu`='1' WHERE ( id=27 ) [ RunTime:0.0675s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderlist' LIMIT 1   [ RunTime:0.0216s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderlist',`method_name`='订单查询',`ismenu`='1',`rootid`='27' WHERE ( id=31 ) [ RunTime:0.1100s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderview' LIMIT 1   [ RunTime:0.0577s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderview',`method_name`='订单详情',`ismenu`='0',`rootid`='27' WHERE ( id=32 ) [ RunTime:0.1172s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'money' LIMIT 1   [ RunTime:0.0777s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='money',`method_name`='用户代币查询',`ismenu`='1',`rootid`='27' WHERE ( id=30 ) [ RunTime:0.1389s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'moneyview' LIMIT 1   [ RunTime:0.0616s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='moneyview',`method_name`='用户流水详情',`ismenu`='0',`rootid`='27' WHERE ( id=33 ) [ RunTime:0.1425s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0928s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`controller_name`='用户管理',`rootid`='0',`ismenu`='1' WHERE ( id=15 ) [ RunTime:0.1662s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'index' LIMIT 1   [ RunTime:0.1250s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='index',`method_name`='用户列表',`ismenu`='1',`rootid`='15' WHERE ( id=16 ) [ RunTime:0.1646s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0786s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add_form',`method_name`='添加用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=17 ) [ RunTime:0.0837s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add' LIMIT 1   [ RunTime:0.0342s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add',`method_name`='添加用户(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=18 ) [ RunTime:0.0649s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0219s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_form',`method_name`='编辑用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=19 ) [ RunTime:0.2115s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0556s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit',`method_name`='编辑(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=20 ) [ RunTime:0.2553s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'del' LIMIT 1   [ RunTime:0.0771s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='del',`method_name`='删除用户',`ismenu`='0',`rootid`='15' WHERE ( id=21 ) [ RunTime:0.0748s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword_form' LIMIT 1   [ RunTime:0.0216s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword_form',`method_name`='修改个人密码(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=22 ) [ RunTime:0.0710s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword' LIMIT 1   [ RunTime:0.0237s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword',`method_name`='修改个人密码(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=23 ) [ RunTime:0.0703s ]
+
+[ 2015-07-31T16:44:15+08:00 ] 127.0.0.1 /FlushNodes/rebuild
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0198s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438332243','/FlushNodes/rebuild','flushnodes','rebuild') [ RunTime:0.0664s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0482s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0830s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1239s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0441s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0325s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0526s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0874s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0643s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0623s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0816s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1113s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0980s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1013s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1119s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1239s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1074s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0927s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0457s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0226s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0389s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0447s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0426s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0631s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0658s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0658s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0874s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0870s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0974s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1065s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1413s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1290s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1151s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0787s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0541s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0487s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0336s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0551s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0608s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0708s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0752s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0911s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0732s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0802s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0935s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0853s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0974s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0993s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0749s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0658s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0724s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0786s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0882s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1085s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0948s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0978s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1140s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1065s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.1214s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.1234s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0890s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0496s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0329s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0227s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0222s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0536s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0435s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0586s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0694s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0629s ]
+SQL: UPDATE `admin_nodes` SET `controller`='App',`controller_name`='后台',`rootid`='0',`ismenu`='1' WHERE ( id=34 ) [ RunTime:0.1142s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0643s ]
+SQL: UPDATE `admin_nodes` SET `controller`='App',`method`='index',`method_name`='App列表',`ismenu`='1',`rootid`='34' WHERE ( id=35 ) [ RunTime:0.1218s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0608s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`controller_name`='更新节点',`rootid`='0',`ismenu`='1' WHERE ( id=1 ) [ RunTime:0.1275s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0786s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='index',`method_name`='浏览节点',`ismenu`='1',`rootid`='1' WHERE ( id=2 ) [ RunTime:0.0810s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0310s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='rebuild',`method_name`='初始化节点数据',`ismenu`='0',`rootid`='1' WHERE ( id=3 ) [ RunTime:0.1066s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0345s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`controller_name`='用户组管理',`rootid`='0',`ismenu`='1' WHERE ( id=4 ) [ RunTime:0.1258s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'index' LIMIT 1   [ RunTime:0.0676s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='index',`method_name`='用户组列表',`ismenu`='1',`rootid`='4' WHERE ( id=5 ) [ RunTime:0.1124s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0809s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add_form',`method_name`='添加用户组（模板）',`ismenu`='0',`rootid`='4' WHERE ( id=6 ) [ RunTime:0.1342s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add' LIMIT 1   [ RunTime:0.0782s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add',`method_name`='添加用户组（提交）',`ismenu`='0',`rootid`='4' WHERE ( id=7 ) [ RunTime:0.0706s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0228s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit_form',`method_name`='编辑用户组(模板)',`ismenu`='0',`rootid`='4' WHERE ( id=8 ) [ RunTime:0.0798s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0454s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit',`method_name`='编辑用户组(提交)',`ismenu`='0',`rootid`='4' WHERE ( id=9 ) [ RunTime:0.0992s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'del' LIMIT 1   [ RunTime:0.0448s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='del',`method_name`='删除用户组',`ismenu`='0',`rootid`='4' WHERE ( id=10 ) [ RunTime:0.0822s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0533s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`controller_name`='后台',`rootid`='0',`ismenu`='1' WHERE ( id=11 ) [ RunTime:0.1089s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `method` = 'index' LIMIT 1   [ RunTime:0.0661s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`method`='index',`method_name`='首页',`ismenu`='1',`rootid`='11' WHERE ( id=12 ) [ RunTime:0.1353s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0966s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`controller_name`='日志记录',`rootid`='0',`ismenu`='1' WHERE ( id=13 ) [ RunTime:0.1456s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `method` = 'index' LIMIT 1   [ RunTime:0.1160s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`method`='index',`method_name`='浏览所有日志',`ismenu`='1',`rootid`='13' WHERE ( id=14 ) [ RunTime:0.1683s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `rootid` = 0 LIMIT 1   [ RunTime:0.1059s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`controller_name`='交易管理',`rootid`='0',`ismenu`='1' WHERE ( id=27 ) [ RunTime:0.1712s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderlist' LIMIT 1   [ RunTime:0.0769s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderlist',`method_name`='订单查询',`ismenu`='1',`rootid`='27' WHERE ( id=31 ) [ RunTime:0.1050s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderview' LIMIT 1   [ RunTime:0.0270s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderview',`method_name`='订单详情',`ismenu`='0',`rootid`='27' WHERE ( id=32 ) [ RunTime:0.0720s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'money' LIMIT 1   [ RunTime:0.0213s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='money',`method_name`='用户代币查询',`ismenu`='1',`rootid`='27' WHERE ( id=30 ) [ RunTime:0.0711s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'moneyview' LIMIT 1   [ RunTime:0.0199s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='moneyview',`method_name`='用户流水详情',`ismenu`='0',`rootid`='27' WHERE ( id=33 ) [ RunTime:0.0763s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0232s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`controller_name`='用户管理',`rootid`='0',`ismenu`='1' WHERE ( id=15 ) [ RunTime:0.0708s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'index' LIMIT 1   [ RunTime:0.0197s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='index',`method_name`='用户列表',`ismenu`='1',`rootid`='15' WHERE ( id=16 ) [ RunTime:0.0746s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0225s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add_form',`method_name`='添加用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=17 ) [ RunTime:0.0707s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add' LIMIT 1   [ RunTime:0.0255s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add',`method_name`='添加用户(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=18 ) [ RunTime:0.0689s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0225s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_form',`method_name`='编辑用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=19 ) [ RunTime:0.0877s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0603s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit',`method_name`='编辑(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=20 ) [ RunTime:0.1398s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'del' LIMIT 1   [ RunTime:0.0728s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='del',`method_name`='删除用户',`ismenu`='0',`rootid`='15' WHERE ( id=21 ) [ RunTime:0.1074s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword_form' LIMIT 1   [ RunTime:0.0207s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword_form',`method_name`='修改个人密码(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=22 ) [ RunTime:0.0742s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword' LIMIT 1   [ RunTime:0.0237s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword',`method_name`='修改个人密码(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=23 ) [ RunTime:0.0687s ]
+
+[ 2015-07-31T16:44:15+08:00 ] 127.0.0.1 /FlushNodes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000890s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2015-07-31T16:44:25+08:00 ] 127.0.0.1 /FlushNodes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0647s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.1065s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.1198s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0880s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0929s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\c123ed7e50b5d72ba38762de26735f44.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2015-07-31T16:44:38+08:00 ] 127.0.0.1 /Group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'index' LIMIT 1   [ RunTime:0.0487s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0771s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 5 LIMIT 1   [ RunTime:0.4142s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.0941s ]
+SQL: SELECT * FROM `admin_group`  [ RunTime:0.3886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e3c2692a26033fd5fa6403a4e2443c46.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001733s ]
+
+[ 2015-07-31T16:44:42+08:00 ] 127.0.0.1 /Group/edit_form/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0985s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.1110s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.1049s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 8 LIMIT 1   [ RunTime:0.1193s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.1167s ]
+SQL: SELECT * FROM `admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0896s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.1187s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 8 LIMIT 1   [ RunTime:0.1172s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.1167s ]
+SQL: SELECT `nodes_id` FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\bf7264924618d369dda1ea1b23959893.php 第 323 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2015-07-31T16:44:51+08:00 ] 127.0.0.1 /Group/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0991s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit' LIMIT 1   [ RunTime:0.1038s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.1121s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 9 LIMIT 1   [ RunTime:0.1152s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.1158s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438332286','/Group/edit','group','edit') [ RunTime:0.1770s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.1150s ]
+SQL: UPDATE `admin_group` SET `name`='系统管理员',`desc`='最高权限' WHERE `id` = 1 [ RunTime:0.1140s ]
+SQL: DELETE FROM `admin_group_nodes` WHERE `group_id` = 1 [ RunTime:0.0924s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','2') [ RunTime:0.1566s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','3') [ RunTime:0.1277s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','5') [ RunTime:0.1739s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','6') [ RunTime:0.1462s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','7') [ RunTime:0.1572s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','8') [ RunTime:0.4117s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','9') [ RunTime:0.0890s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','10') [ RunTime:0.1246s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','12') [ RunTime:0.1345s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','14') [ RunTime:0.1495s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','16') [ RunTime:0.1695s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','17') [ RunTime:0.1609s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','18') [ RunTime:0.0861s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','19') [ RunTime:0.1202s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','20') [ RunTime:0.1383s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','21') [ RunTime:0.1511s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','22') [ RunTime:0.1251s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','23') [ RunTime:0.1454s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','25') [ RunTime:0.1569s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','26') [ RunTime:0.1321s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','30') [ RunTime:0.1130s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','31') [ RunTime:0.1308s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','32') [ RunTime:0.1401s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','33') [ RunTime:0.1588s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','35') [ RunTime:0.1649s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.1120s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0847s ]
+
+[ 2015-07-31T16:44:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.1199s ]
+NOTIC: [8] Undefined variable: ret D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AuthController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.1088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001641s ]
+
+[ 2015-07-31T16:44:57+08:00 ] 127.0.0.1 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0438s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 35 LIMIT 1   [ RunTime:0.0455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000937s ]
+NOTIC: [8] Undefined variable: data D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 231 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002519s ]
+
+[ 2015-07-31T16:58:09+08:00 ] 127.0.0.1 /FlushNodes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\c123ed7e50b5d72ba38762de26735f44.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2015-07-31T16:58:16+08:00 ] 127.0.0.1 /FlushNodes/rebuild
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0208s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438333091','/FlushNodes/rebuild','flushnodes','rebuild') [ RunTime:0.0688s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0227s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0184s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0378s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0457s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0301s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0245s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0229s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0229s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0184s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0181s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0406s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0231s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0179s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0181s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0184s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0184s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0183s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 3 LIMIT 1   [ RunTime:0.0206s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0200s ]
+SQL: UPDATE `admin_nodes` SET `controller`='App',`controller_name`='后台',`rootid`='0',`ismenu`='1' WHERE ( id=34 ) [ RunTime:0.0699s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0211s ]
+SQL: UPDATE `admin_nodes` SET `controller`='App',`method`='index',`method_name`='App列表',`ismenu`='1',`rootid`='34' WHERE ( id=35 ) [ RunTime:0.0705s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0207s ]
+SQL: INSERT INTO `admin_nodes` (`controller`,`method`,`method_name`,`ismenu`,`rootid`) VALUES ('App','add_form','添加一个app','0','34') [ RunTime:0.0860s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0241s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`controller_name`='更新节点',`rootid`='0',`ismenu`='1' WHERE ( id=1 ) [ RunTime:0.0776s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0218s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='index',`method_name`='浏览节点',`ismenu`='1',`rootid`='1' WHERE ( id=2 ) [ RunTime:0.0677s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'rebuild' LIMIT 1   [ RunTime:0.0179s ]
+SQL: UPDATE `admin_nodes` SET `controller`='FlushNodes',`method`='rebuild',`method_name`='初始化节点数据',`ismenu`='0',`rootid`='1' WHERE ( id=3 ) [ RunTime:0.0908s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0237s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`controller_name`='用户组管理',`rootid`='0',`ismenu`='1' WHERE ( id=4 ) [ RunTime:0.0734s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'index' LIMIT 1   [ RunTime:0.0215s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='index',`method_name`='用户组列表',`ismenu`='1',`rootid`='4' WHERE ( id=5 ) [ RunTime:0.0773s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0200s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add_form',`method_name`='添加用户组（模板）',`ismenu`='0',`rootid`='4' WHERE ( id=6 ) [ RunTime:0.0715s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'add' LIMIT 1   [ RunTime:0.0181s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='add',`method_name`='添加用户组（提交）',`ismenu`='0',`rootid`='4' WHERE ( id=7 ) [ RunTime:0.0663s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0227s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit_form',`method_name`='编辑用户组(模板)',`ismenu`='0',`rootid`='4' WHERE ( id=8 ) [ RunTime:0.0727s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0195s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='edit',`method_name`='编辑用户组(提交)',`ismenu`='0',`rootid`='4' WHERE ( id=9 ) [ RunTime:0.0725s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'del' LIMIT 1   [ RunTime:0.0201s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Group',`method`='del',`method_name`='删除用户组',`ismenu`='0',`rootid`='4' WHERE ( id=10 ) [ RunTime:0.0736s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0197s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`controller_name`='后台',`rootid`='0',`ismenu`='1' WHERE ( id=11 ) [ RunTime:0.0721s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Index' AND `method` = 'index' LIMIT 1   [ RunTime:0.0206s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Index',`method`='index',`method_name`='首页',`ismenu`='1',`rootid`='11' WHERE ( id=12 ) [ RunTime:0.0748s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0186s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`controller_name`='日志记录',`rootid`='0',`ismenu`='1' WHERE ( id=13 ) [ RunTime:0.0849s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Log' AND `method` = 'index' LIMIT 1   [ RunTime:0.0214s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Log',`method`='index',`method_name`='浏览所有日志',`ismenu`='1',`rootid`='13' WHERE ( id=14 ) [ RunTime:0.0914s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0270s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`controller_name`='交易管理',`rootid`='0',`ismenu`='1' WHERE ( id=27 ) [ RunTime:0.0683s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderlist' LIMIT 1   [ RunTime:0.0218s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderlist',`method_name`='订单查询',`ismenu`='1',`rootid`='27' WHERE ( id=31 ) [ RunTime:0.0783s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'orderview' LIMIT 1   [ RunTime:0.0185s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='orderview',`method_name`='订单详情',`ismenu`='0',`rootid`='27' WHERE ( id=32 ) [ RunTime:0.0697s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'money' LIMIT 1   [ RunTime:0.0192s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='money',`method_name`='用户代币查询',`ismenu`='1',`rootid`='27' WHERE ( id=30 ) [ RunTime:0.0728s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'moneyview' LIMIT 1   [ RunTime:0.0191s ]
+SQL: UPDATE `admin_nodes` SET `controller`='Member',`method`='moneyview',`method_name`='用户流水详情',`ismenu`='0',`rootid`='27' WHERE ( id=33 ) [ RunTime:0.0666s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `rootid` = 0 LIMIT 1   [ RunTime:0.0194s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`controller_name`='用户管理',`rootid`='0',`ismenu`='1' WHERE ( id=15 ) [ RunTime:0.0693s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'index' LIMIT 1   [ RunTime:0.0198s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='index',`method_name`='用户列表',`ismenu`='1',`rootid`='15' WHERE ( id=16 ) [ RunTime:0.0925s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0222s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add_form',`method_name`='添加用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=17 ) [ RunTime:0.0723s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'add' LIMIT 1   [ RunTime:0.0185s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='add',`method_name`='添加用户(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=18 ) [ RunTime:0.0704s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0190s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_form',`method_name`='编辑用户(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=19 ) [ RunTime:0.0726s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0230s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit',`method_name`='编辑(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=20 ) [ RunTime:0.0683s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'del' LIMIT 1   [ RunTime:0.0220s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='del',`method_name`='删除用户',`ismenu`='0',`rootid`='15' WHERE ( id=21 ) [ RunTime:0.0743s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword_form' LIMIT 1   [ RunTime:0.0216s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword_form',`method_name`='修改个人密码(模板)',`ismenu`='0',`rootid`='15' WHERE ( id=22 ) [ RunTime:0.0715s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'User' AND `method` = 'edit_mypassword' LIMIT 1   [ RunTime:0.0213s ]
+SQL: UPDATE `admin_nodes` SET `controller`='User',`method`='edit_mypassword',`method_name`='修改个人密码(提交)',`ismenu`='0',`rootid`='15' WHERE ( id=23 ) [ RunTime:0.0696s ]
+
+[ 2015-07-31T16:58:17+08:00 ] 127.0.0.1 /FlushNodes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'FlushNodes' AND `method` = 'index' LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2015-07-31T16:58:20+08:00 ] 127.0.0.1 /Group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'index' LIMIT 1   [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 5 LIMIT 1   [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `admin_group`  [ RunTime:0.0225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e3c2692a26033fd5fa6403a4e2443c46.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2015-07-31T16:58:23+08:00 ] 127.0.0.1 /Group/edit_form/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 8 LIMIT 1   [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit_form' LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 8 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0194s ]
+SQL: SELECT `nodes_id` FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.0184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\bf7264924618d369dda1ea1b23959893.php 第 323 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2015-07-31T16:58:29+08:00 ] 127.0.0.1 /Group/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Group' AND `method` = 'edit' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 9 LIMIT 1   [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0198s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1438333107','/Group/edit','group','edit') [ RunTime:0.0787s ]
+SQL: SHOW COLUMNS FROM `admin_group` [ RunTime:0.0204s ]
+SQL: UPDATE `admin_group` SET `name`='系统管理员',`desc`='最高权限' WHERE `id` = 1 [ RunTime:0.0711s ]
+SQL: DELETE FROM `admin_group_nodes` WHERE `group_id` = 1 [ RunTime:0.0753s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','2') [ RunTime:0.0701s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','3') [ RunTime:0.0844s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','5') [ RunTime:0.0703s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','6') [ RunTime:0.0726s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','7') [ RunTime:0.0712s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','8') [ RunTime:0.0654s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','9') [ RunTime:0.0710s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','10') [ RunTime:0.0728s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','12') [ RunTime:0.0703s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','14') [ RunTime:0.0734s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','16') [ RunTime:0.0722s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','17') [ RunTime:0.0734s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','18') [ RunTime:0.0735s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','19') [ RunTime:0.0750s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','20') [ RunTime:0.0667s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','21') [ RunTime:0.0718s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','22') [ RunTime:0.0698s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','23') [ RunTime:0.0723s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','25') [ RunTime:0.0706s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','26') [ RunTime:0.0717s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','30') [ RunTime:0.0709s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','31') [ RunTime:0.0752s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','32') [ RunTime:0.0706s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','33') [ RunTime:0.0761s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','35') [ RunTime:0.0758s ]
+SQL: INSERT INTO `admin_group_nodes` (`group_id`,`nodes_id`) VALUES ('1','36') [ RunTime:0.0735s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.0197s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0222s ]
+
+[ 2015-07-31T16:58:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0199s ]
+NOTIC: [8] Undefined variable: ret D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AuthController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2015-07-31T16:58:35+08:00 ] 127.0.0.1 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0224s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 35 LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: data D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 231 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2015-07-31T16:58:41+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001991s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0347s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: groups D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 233 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 326 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2015-07-31T17:04:03+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2015-07-31T17:05:12+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2015-07-31T17:52:20+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2015-07-31T17:52:59+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2015-07-31T17:53:29+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0261s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2015-07-31T17:54:00+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0205s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 304 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2015-07-31T17:55:12+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0458s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 304 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2015-07-31T17:55:58+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 304 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-07-31T17:57:19+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0745s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.1069s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.1015s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0880s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2015-07-31T17:57:46+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0184s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2015-07-31T17:58:25+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002239s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001557s ]
+
+[ 2015-07-31T17:59:47+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0205s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 303 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2015-07-31T18:00:24+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2015-07-31T18:00:33+08:00 ] 127.0.0.1 /App/add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'add_form' LIMIT 1   [ RunTime:0.0208s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 36 LIMIT 1   [ RunTime:0.0225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\4c3d35bff38b92ec44da274488099550.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001287s ]
+

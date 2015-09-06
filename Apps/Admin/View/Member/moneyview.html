@@ -1,0 +1,75 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">用户代币查询</h1>
+        <p class="description">流水</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <!-- Bordered + Striped Table -->
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+
+                                <th>获取金豆</th>
+                                <th>之前余额</th>
+                                <th>花费金豆</th>
+                                <th>之前余额</th>
+                                <th>获取点券</th>
+                                <th>之前余额</th>
+                                <th>花费点券</th>
+                                <th>之前余额</th>
+                                <th>时间</th>
+                                <th>订单</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                                <tr>
+                                    <td>{$row.id}</td>
+
+                                    <td>{$row.money_earn}</td>
+                                    <td>{$row._money_earn}</td>
+                                    <td>{$row.money_spend}</td>
+                                    <td>{$row._money_spend}</td>
+                                    <td>{$row.bonus_earn}</td>
+                                    <td>{$row._bonus_earn}</td>
+                                    <td>{$row.bonus_spend}</td>
+                                    <td>{$row._bonus_spend}</td>
+                                    <td>{$row.ctime|date="Y/m/d H:i",###}</td>
+                                    <td><a class="btn btn-blue btn-icon btn-icon-standalone btn-icon-standalone-right btn-xs"  href="/Member/orderview/id/{$row.order_no}"><i class="fa-search"></i>
+                                        <span>查看</span></a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                        {$page}
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<include file="../Apps/Admin/View/_footer.html" />

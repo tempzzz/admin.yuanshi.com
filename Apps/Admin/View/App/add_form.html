@@ -1,0 +1,167 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">交易管理</h1>
+        <p class="description">添加App</p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+
+
+
+    <div class="panel-body">
+
+        <form role="form" id="form1" method="post" class="validate" action="/App/add" autocomplete="off" onsubmit="return checkData(this);">
+            <input type="hidden" name="appid" id="appid" value="" />
+            <div class="row col-margin">
+                <div class="col-xs-12">
+                <input type="text" class="form-control" name="appkey" id="appkey" placeholder="Appkey" value="" />
+                </div>
+
+                <div class="col-xs-12">
+                <!--<label class="control-label"><strong>App名称</strong></label>-->
+                <input type="text" class="form-control" name="appname" id="appname" placeholder="App名称" value="" />
+                </div>
+                <assign name="rates" value="$Think.config.MAX_RATE_NUMS" />
+
+                <for start="0" end="$rates">
+                <div class="col-xs-1">
+                    <input class="form-control" type="text" disabled value="{$i+1}" />
+                </div>
+                <div class="col-xs-2">
+
+                    <input type="text" class="form-control lowprice" name="low[]"  placeholder="最低金额" value="" />
+
+                </div>
+
+                <div class="col-xs-2">
+
+                    <input type="text" class="form-control highprice" name="high[]"  placeholder="上限金额" value="" />
+
+                </div>
+
+                <div class="col-xs-2">
+                    <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control bonus" name="bonus[]"  placeholder="返点" value="" />
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                    <i class="fa-calendar"></i>
+                    </span>
+                    <input type="text" placeholder="有效期(单位：天)" name="days[]" class="form-control">
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                </for>
+                <div class="col-xs-12">
+                <button type="submit" class="btn btn-success">提交</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<script>
+
+    function checkData(obj){
+        var err = '';
+        var appkey = $('#appkey').val();
+
+        if(!$.trim(appkey)){
+            err +='appkey不能为空<br />';
+        }
+
+        var appname = $('#appname').val();
+
+        if(!$.trim(appname)){
+            err +='appname不能为空<br />';
+        }
+
+
+        var low = new Array();
+        var high = new Array();
+        var bonus = new Array();
+
+        $('.lowprice').each(function(){
+            low.push(parseInt(this.value));
+        });
+
+        $('.highprice').each(function(){
+            high.push(parseInt(this.value));
+        });
+
+        $('.bonus').each(function(){
+            bonus.push(parseInt(this.value));
+        });
+
+        var data = new Array();
+        for(var i=0 ;i<low.length;i++){
+            data[i] = new Array(low[i],high[i]);
+            var sum = low[i] + high[i] + bonus[i] ;
+
+            if(sum > 0){
+                if(low[i] == 0 || high[i] == 0 || bonus[i] == 0 || low[i] >= high[i] || bonus[i]*2 >= high[i] ){
+                    //如果设置了改行数据，但是某数据设置为0，或者下限大于上限值,或者返点数大于上限的50%
+                    err += '第 '+(i+1)+ ' 行数据设置异常<br />';
+                }
+            }
+        }
+
+        for(var i=0;i<data.length;i++)
+            for(var j=0;j<low.length;j++){{
+                if(low[j] > data[i][0] && low[j] < data[i][1]){
+                    err += '第 '+(i+1)+' 行与第 '+(j+1)+' 行数据范围冲突<br />';
+                }
+            }
+        }
+
+        if(err){
+            MSGBOX.show(err,'',MSGBOX.MSGTYPE_ALERT);
+            return false;
+        }
+
+        return true;
+
+    }
+
+
+    $('#appkey').blur(function(){
+        if(this.value){
+            $.ajax({
+                url: "/App/getAppinfo",
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    appkey: $('#appkey').val()
+                },
+                success: function(resp)
+                {
+                    if(resp.success){
+                        $('#appname').val(resp.appname);
+                        $('#appid').val(resp.appid);
+                    }else{
+                        MSGBOX.show('该App已经存在，不能重复添加','',MSGBOX.MSGTYPE_ALERT);
+                    }
+
+                }
+            });
+        }
+    });
+
+
+</script>
+
+<!-- Imported scripts on this page -->
+
+<include file="../Apps/Admin/View/_footer.html" />
+

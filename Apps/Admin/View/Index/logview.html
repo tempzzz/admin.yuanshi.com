@@ -1,0 +1,59 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">日志管理</h1>
+        <p class="description">列表</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <!-- Bordered + Striped Table -->
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>用户</th>
+                                <th>请求</th>
+                                <th>IP</th>
+                                <th>时间</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <foreach name="data" item="row">
+                            <tr>
+                                <td>{$row.id}</td>
+                                <td>{$row.username}</td>
+                                <td>{$row.request_uri}</td>
+                                <td>{$row.ip}</td>
+                                <td>{$row.createtime|date="Y/m/d H:i",###}</td>
+                            </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    {$page}
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<include file="../Apps/Admin/View/_footer.html" />

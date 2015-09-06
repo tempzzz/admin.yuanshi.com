@@ -1,0 +1,114 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">用户管理</h1>
+        <p class="description">添加用户</p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+
+
+
+    <div class="panel-body">
+
+        <form role="form" id="form1" method="post" class="validate" action="/User/add" autocomplete="off" onsubmit="return checkData(this);">
+            <div class="form-group">
+                <label class="control-label"><strong>用户名</strong></label>
+                <input type="text" class="form-control" name="username"  value="" />
+            </div>
+
+            <div class="form-group">
+
+                <label class="control-label"><strong>所属管理组</strong></label>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($)
+                    {
+                        $("#sboxit-1").selectBoxIt().on('open', function()
+                        {
+                            // Adding Custom Scrollbar
+                            $(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+                        });
+                    });
+                </script>
+
+                <select class="form-control" id="sboxit-1" name="groups">
+                    <foreach name="groups" item="row">
+                    <option value="{$row.id}" >{$row.name} ({$row.desc})</option>
+                    </foreach>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label"><strong>输入密码</strong>(不修改密码不用填写)</label>
+                <input type="password" class="form-control" name="password" id="password" value="" />
+            </div>
+            <div class="form-group">
+                <label class="control-label"><strong>重复输入密码</strong></label>
+                <input type="password" class="form-control" name="password1" id="password1" value="" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">提交</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<script>
+
+   function checkData(obj){
+       var u = obj.username.value;
+
+       if(!u){
+           MSGBOX.show('填写用户名','',MSGBOX.MSGTYPE_ALERT);
+           return false;
+       }
+
+       var p = obj.password.value;
+       var p1 = obj.password1.value;
+
+       var modes = 0;
+
+       //正则表达式验证符合要求的
+
+           if(p.length < 8) {
+           MSGBOX.show('密码最小长度为8位，且包含数字、大写字母、小写字母、特殊字符中任意两种','',MSGBOX.MSGTYPE_ALERT);
+           return false;
+           }
+
+           if (/\d/.test(p)) modes++; //数字
+           if (/[a-z]/.test(p)) modes++; //小写
+           if (/[A-Z]/.test(p)) modes++; //大写
+           if (/\W/.test(p)) modes++; //特殊字符
+
+           if(modes < 2){
+               MSGBOX.show('密码长度必须超过8位，且包含数字、大写字母、小写字母、特殊字符中任意两种','',MSGBOX.MSGTYPE_ALERT);
+               return false;
+           }
+
+           if(p!=p1){
+               MSGBOX.show('两次输入密码不一致，请重新输入','',MSGBOX.MSGTYPE_ALERT);
+               return false;
+           }
+
+       return true;
+   }
+</script>
+
+
+<link rel="stylesheet" href="/assets/js/select2/select2.css">
+<link rel="stylesheet" href="/assets/js/select2/select2-bootstrap.css">
+<link rel="stylesheet" href="/assets/js/multiselect/css/multi-select.css">
+
+
+<script src="/assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script src="/assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+
+
+<include file="../Apps/Admin/View/_footer.html" />
+

@@ -1,0 +1,114 @@
+<include file="../Apps/Admin/View/_header.html" />
+<div class="page-title">
+
+    <div class="title-env">
+        <h1 class="title">用户组管理</h1>
+        <p class="description">编辑用户组</p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+
+
+
+    <div class="panel-body">
+
+        <form role="form" id="form1" method="post" class="validate" action="/Group/edit" autocomplete="off">
+        <input type="hidden" name="id" value="{$groups.id}" />
+            <div class="form-group">
+                <!--                <label class="control-label">角色名称</label>-->
+
+                <input type="text" class="form-control" name="name" data-validate="required" data-message-required="角色名称为必填项" placeholder="用户组名称" value="{$groups.name}" />
+            </div>
+
+            <div class="form-group">
+                <!--                <label class="control-label">描述</label>-->
+
+                <input type="text" class="form-control" name="desc" data-validate="required" data-message-required="描述为必填项" placeholder="描述" value="{$groups.desc}" />
+            </div>
+   <!--nodes--> <div calss="form-group">
+
+                <table class="table table-bordered table-striped">
+
+                    <foreach name="data" item="rows" key="controller">
+                        <tbody>
+
+                        <tr>
+
+                            <td style="text-align: center">{$controller}</td>
+                            <td>&nbsp;</th>
+                            <td ><strong>{$rows.Desc}</strong></td>
+                            <td>
+                                <a class="btn btn-success btn-xs" href="javascript:chooseChild('{$controller}',1)">
+                                    <span>全选</span>
+                                </a>
+                                <a class="btn btn-success btn-xs" href="javascript:chooseChild('{$controller}',0)">
+                                <span>取消</span>
+                            </a>
+                            </td>
+
+
+                        </tr>
+                        </tbody>
+                        <foreach name="rows.Method" item="row" key="k">
+                            <tbody>
+
+                            <tr  class="childCheckbox">
+
+                                <td style="background-color: white;text-align: center;">|___</td>
+                                <td style="background-color: white;">{$row.Name}</th>
+                                <td style="background-color: white;">{$row.Desc}</td>
+                                <td style="background-color: white;">
+                                    <label style="width:100%;line-height:30px;">
+                                    <input type="checkbox" name="ChildMenu[]" class="{$controller}_ChildMenu" value="{$row.id}" <php>if(in_array($row['id'],$groups_nodes)) echo "checked";</php> />                    </label></td>
+                            </tr>
+                            </tbody>
+                        </foreach>
+
+                    </foreach>
+                </table>
+
+            </div>
+            <!--<div class="form-group">
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="state" value="1" checked />
+                        是否使用
+                    </label>
+                </div>
+            </div>-->
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">提交</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+        <script>
+
+            $('.childCheckbox').mouseover(function(){
+                $(this).find('td').css("background-color","#f9ffdd");
+            });
+            $('.childCheckbox').mouseout(function(){
+                $(this).find('td').css("background-color","white");
+            });
+
+            function chooseChild(controller,checked){
+                $('.'+controller+'_ChildMenu').each(function(){
+                    if(checked)
+                        $(this).prop('checked',true);
+                    else
+                        $(this).prop('checked',false);
+                });
+
+            }
+        </script>
+<script src="/assets/js/jquery-validate/jquery.validate.min.js"></script>
+<include file="../Apps/Admin/View/_footer.html" />
+

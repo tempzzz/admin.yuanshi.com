@@ -1,0 +1,1248 @@
+[ 2015-08-13T12:22:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+
+[ 2015-08-13T12:22:00+08:00 ] 127.0.0.1 /Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [8] Undefined index: HTTP_REFERER D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\LoginController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2015-08-13T12:22:01+08:00 ] 127.0.0.1 /login/verify?_t=1439439720
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2015-08-13T12:22:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-08-13T12:22:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+
+[ 2015-08-13T12:22:06+08:00 ] 127.0.0.1 /Login/auth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'admin' AND `password` = 'cf287cb3c51486f44b30169785f16d37' LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_nodes`  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0041s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439439726','/Login/auth','login','auth') [ RunTime:0.0639s ]
+
+[ 2015-08-13T12:22:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: ret D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AuthController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\e019f7fdf6a2d246b2b3d1ee3ab4bd29.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002193s ]
+
+[ 2015-08-13T12:34:35+08:00 ] 127.0.0.1 /Member/money
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'Member' AND `method` = 'money' LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 30 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_user_money` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_user_money` LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `mzw_sdk_pay_user_money` ORDER BY id desc LIMIT 0,30   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\a6140b03250663eff97a9e7c2bbe37cc.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\a6140b03250663eff97a9e7c2bbe37cc.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\a6140b03250663eff97a9e7c2bbe37cc.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\a6140b03250663eff97a9e7c2bbe37cc.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2015-08-13T12:35:54+08:00 ] 127.0.0.1 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'index' LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 35 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_rate` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `mzw_sdk_pay_rate` LIMIT 0,20   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\13ccbb54350cb75c7d21ee61a03fb671.php 第 294 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2015-08-13T12:35:56+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 297 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-08-13T15:30:35+08:00 ] 127.0.0.1 /App/payment_edit_form/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001838s ]
+
+[ 2015-08-13T15:30:42+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0041s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451042','/App/payment_edit','app','payment_edit') [ RunTime:0.0517s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+NOTIC: [2] addslashes() expects parameter 1 to be string, array given D:\web\new.muzhiwan.com\admin.pay.mzw.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 1020 行.
+SQL: update mzw_sdk_pay_payment set appid = '1639',
+            appkey = '2266e9a5f39bfee1e8f53083d8e7c4a0' ,
+            appname = '花千骨' ,
+            type = ''
+            where id = 30  [ RunTime:0.0036s ]
+
+[ 2015-08-13T15:30:42+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002374s ]
+
+[ 2015-08-13T15:33:00+08:00 ] 127.0.0.1 /App/payment_edit_form/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2015-08-13T15:33:07+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0038s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451187','/App/payment_edit','app','payment_edit') [ RunTime:0.0578s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+NOTIC: [2] addslashes() expects parameter 1 to be string, array given D:\web\new.muzhiwan.com\admin.pay.mzw.com\ThinkPHP\Library\Think\Db\Driver.class.php 第 1020 行.
+SQL: update mzw_sdk_pay_payment set appid = '1639',
+            appkey = '2266e9a5f39bfee1e8f53083d8e7c4a0' ,
+            appname = '花千骨' ,
+            type = ''
+            where id = 30  [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001610s ]
+
+[ 2015-08-13T15:34:09+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0039s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451249','/App/payment_edit','app','payment_edit') [ RunTime:0.0571s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0038s ]
+SQL: update mzw_sdk_pay_payment set appid = '1639',
+            appkey = '2266e9a5f39bfee1e8f53083d8e7c4a0' ,
+            appname = '花千骨' ,
+            type = '{\"alipay\":1,\"yeepay_credit\":1,\"yeepay_debit\":1,\"yeepay_card_mobile\":0,\"yeepay_card_game\":0,\"tenpay\":1}'
+            where id = 30  [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001510s ]
+
+[ 2015-08-13T15:35:07+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined offset: 0 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 0 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 2 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 2 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 3 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 3 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 4 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 4 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 5 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 5 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index:  D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2015-08-13T15:38:08+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 297 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2015-08-13T15:38:48+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Array to string conversion D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 297 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2015-08-13T15:39:16+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined offset: 0 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 2 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 3 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 4 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined offset: 5 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 249 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 297 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2015-08-13T15:41:49+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001766s ]
+
+[ 2015-08-13T15:42:13+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2015-08-13T15:42:21+08:00 ] 127.0.0.1 /App/payment_edit_form/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002173s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2015-08-13T15:43:07+08:00 ] 127.0.0.1 /App/payment_edit_form/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: alipay D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: yeepay_credit D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: yeepay_debit D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: yeepay_card_mobile D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: yeepay_card_game D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: tenpay D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 242 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2015-08-13T15:44:00+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0038s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451840','/App/payment_edit','app','payment_edit') [ RunTime:0.0482s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0040s ]
+SQL: update mzw_sdk_pay_payment set appid = '1000',
+            appkey = 'f1436ab48781' ,
+            appname = '拇指玩测试包' ,
+            type = '{\"alipay\":1,\"yeepay_credit\":1,\"yeepay_debit\":1,\"yeepay_card_mobile\":0,\"yeepay_card_game\":0,\"tenpay\":1}'
+            where id = 32  [ RunTime:0.0044s ]
+
+[ 2015-08-13T15:44:00+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-08-13T15:44:03+08:00 ] 127.0.0.1 /App/payment_edit_form/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2015-08-13T15:44:07+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451847','/App/payment_edit','app','payment_edit') [ RunTime:0.0494s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0040s ]
+SQL: update mzw_sdk_pay_payment set appid = '1000',
+            appkey = 'f1436ab48781' ,
+            appname = '拇指玩测试包' ,
+            type = '{\"alipay\":1,\"yeepay_credit\":1,\"yeepay_debit\":1,\"yeepay_card_mobile\":0,\"yeepay_card_game\":1,\"tenpay\":1}'
+            where id = 32  [ RunTime:0.0035s ]
+
+[ 2015-08-13T15:44:07+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001932s ]
+
+[ 2015-08-13T15:44:15+08:00 ] 127.0.0.1 /App/payment_edit_form/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002120s ]
+
+[ 2015-08-13T15:44:22+08:00 ] 127.0.0.1 /App/payment_del/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_del' LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 52 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0039s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451861','/App/payment_del/id/32','app','payment_del') [ RunTime:0.0725s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0038s ]
+SQL: DELETE FROM `mzw_sdk_pay_payment` WHERE `id` = 32 [ RunTime:0.0034s ]
+
+[ 2015-08-13T15:44:22+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001869s ]
+
+[ 2015-08-13T15:44:23+08:00 ] 127.0.0.1 /App/payment_add_form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_add_form' LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 48 LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\979272df650bae0a8569c633b92055a5.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\979272df650bae0a8569c633b92055a5.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\979272df650bae0a8569c633b92055a5.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\979272df650bae0a8569c633b92055a5.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2015-08-13T15:44:26+08:00 ] 127.0.0.1 /App/payment_getAppinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_getAppinfo' LIMIT 1   [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 53 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `appkey` = 'f1436ab48781' LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_oauth2_clients` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `mzw_sdk_oauth2_clients` WHERE `appkey` = 'f1436ab48781' LIMIT 1   [ RunTime:0.0043s ]
+
+[ 2015-08-13T15:44:29+08:00 ] 127.0.0.1 /App/payment_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_add' LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 49 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0038s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451869','/App/payment_add','app','payment_add') [ RunTime:0.0531s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0046s ]
+SQL: insert into mzw_sdk_pay_payment set appid = '1000',
+            appkey = 'f1436ab48781' ,
+            appname = '拇指玩测试包' ,
+            type = '{\"alipay\":1,\"yeepay_credit\":0,\"yeepay_debit\":0,\"yeepay_card_mobile\":0,\"yeepay_card_game\":0,\"tenpay\":1}' [ RunTime:0.0042s ]
+
+[ 2015-08-13T15:44:29+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2015-08-13T15:44:32+08:00 ] 127.0.0.1 /App/payment_edit_form/id/33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004614s ]
+
+[ 2015-08-13T15:44:39+08:00 ] 127.0.0.1 /App/payment_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 51 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `admin_log` [ RunTime:0.0039s ]
+SQL: INSERT INTO `admin_log` (`uid`,`ip`,`createtime`,`request_uri`,`c`,`m`) VALUES ('1','127.0.0.1','1439451879','/App/payment_edit','app','payment_edit') [ RunTime:0.0522s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0040s ]
+SQL: update mzw_sdk_pay_payment set appid = '1000',
+            appkey = 'f1436ab48781' ,
+            appname = '拇指玩测试包' ,
+            type = '{\"alipay\":1,\"yeepay_credit\":1,\"yeepay_debit\":1,\"yeepay_card_mobile\":1,\"yeepay_card_game\":0,\"tenpay\":1}'
+            where id = 33  [ RunTime:0.0035s ]
+
+[ 2015-08-13T15:44:39+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-08-13T15:47:23+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004175s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0312s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003334s ]
+
+[ 2015-08-13T16:36:52+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002800s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002964s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined offset: 1 D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 248 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2015-08-13T16:37:04+08:00 ] 127.0.0.1 /App/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment' LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 47 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.9034s ]
+NOTIC: [8] Undefined index: appname D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Admin\Controller\AppController.class.php 第 254 行.
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mzw_sdk_pay_payment` LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` LIMIT 0,20   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\f62bf1d89360a0e89d1e16584a8c56bf.php 第 296 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2015-08-13T16:37:13+08:00 ] 127.0.0.1 /App/payment_edit_form/id/33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002220s ]
+SQL: SHOW COLUMNS FROM `admin_nodes` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `admin_nodes` WHERE `controller` = 'App' AND `method` = 'payment_edit_form' LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `admin_group_nodes` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin_group_nodes` WHERE `group_id` = 1 AND `nodes_id` = 50 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_rate` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `mzw_sdk_pay_payment` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `mzw_sdk_pay_payment` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: flushnodes D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: group D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: user D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 175 行.
+NOTIC: [8] Undefined index: notice D:\web\new.muzhiwan.com\admin.pay.mzw.com\Apps\Runtime\Cache\Admin\503377526be406d6900347d2728fc5e1.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
